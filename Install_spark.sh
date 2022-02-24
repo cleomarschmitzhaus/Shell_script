@@ -23,7 +23,7 @@ scp -oKexAlgorithms=+diffie-hellman-group1-sha1 root@ip_servidor:/caminho_do_arq
 mv spark.sh /home/$USER/'Área\ de\ Trabalho/'
 
 # Tornar o arquivo imutável
-chattr +i spark.sh
+chattr +i /home/$USER/'Área\ de\ Trabalho/'spark.sh
 
 # Extrair, remover pasta antiga e mover pasta nova do programa Spark
 tar -zxvf spark_2_9_4.tar.gz
